@@ -25,6 +25,14 @@
     [self swizzled_setImage:image];
     NSLog(@"%lu\n",(unsigned long)[self calculateMemorySize:image]);
     NSLog(@"%lu\n",UIImageJPEGRepresentation(image, 1).length);
+    
+    UILabel * sizeLabel = [UILabel new];
+    sizeLabel.text = [NSString stringWithFormat:@"%lu\n",(unsigned long)[self calculateMemorySize:image]];
+    sizeLabel.frame = CGRectMake(0, 0, 40, 10);
+    sizeLabel.font = [UIFont systemFontOfSize:8];
+    sizeLabel.backgroundColor = [UIColor blackColor];
+    sizeLabel.textColor = [UIColor whiteColor];
+    [self addSubview:sizeLabel];
 }
 
 - (NSUInteger)calculateMemorySize:(UIImage *)image {
