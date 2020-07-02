@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21CD2DF024AE1A56000FFA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */; };
+		21CD2DF224AE1A56000FFA4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */; };
+		21CD2DF424AE1A56000FFA4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DF324AE1A56000FFA4C /* ViewController.swift */; };
+		21CD2DF724AE1A56000FFA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF524AE1A56000FFA4C /* Main.storyboard */; };
+		21CD2DF924AE1A57000FFA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF824AE1A57000FFA4C /* Assets.xcassets */; };
+		21CD2DFC24AE1A57000FFA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DFA24AE1A57000FFA4C /* LaunchScreen.storyboard */; };
+		21CD2E0524AE1E5A000FFA4C /* GHImageSizeDetetor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E0424AE1E5A000FFA4C /* GHImageSizeDetetor.swift */; };
+		21CD2E0D24AE32E1000FFA4C /* UIImageView+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21CD2DEC24AE1A56000FFA4C /* GHImageSizeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHImageSizeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		21CD2DF324AE1A56000FFA4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21CD2DF624AE1A56000FFA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21CD2DF824AE1A57000FFA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21CD2DFB24AE1A57000FFA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21CD2DFD24AE1A57000FFA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CD2E0424AE1E5A000FFA4C /* GHImageSizeDetetor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHImageSizeDetetor.swift; sourceTree = "<group>"; };
+		21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHImageSizeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		21CD2E0B24AE32E1000FFA4C /* UIImageView+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Runtime.h"; sourceTree = "<group>"; };
+		21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Runtime.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21CD2DE924AE1A56000FFA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21CD2DE324AE1A56000FFA4C = {
+			isa = PBXGroup;
+			children = (
+				21CD2DEE24AE1A56000FFA4C /* GHImageSizeDetector */,
+				21CD2DED24AE1A56000FFA4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21CD2DED24AE1A56000FFA4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21CD2DEC24AE1A56000FFA4C /* GHImageSizeDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21CD2DEE24AE1A56000FFA4C /* GHImageSizeDetector */ = {
+			isa = PBXGroup;
+			children = (
+				21CD2E0324AE1BC6000FFA4C /* Source */,
+				21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */,
+				21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */,
+				21CD2DF324AE1A56000FFA4C /* ViewController.swift */,
+				21CD2DF524AE1A56000FFA4C /* Main.storyboard */,
+				21CD2DF824AE1A57000FFA4C /* Assets.xcassets */,
+				21CD2DFA24AE1A57000FFA4C /* LaunchScreen.storyboard */,
+				21CD2DFD24AE1A57000FFA4C /* Info.plist */,
+			);
+			path = GHImageSizeDetector;
+			sourceTree = "<group>";
+		};
+		21CD2E0324AE1BC6000FFA4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				21CD2E0424AE1E5A000FFA4C /* GHImageSizeDetetor.swift */,
+				21CD2E0B24AE32E1000FFA4C /* UIImageView+Runtime.h */,
+				21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */,
+				21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21CD2DEB24AE1A56000FFA4C /* GHImageSizeDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CD2E0024AE1A57000FFA4C /* Build configuration list for PBXNativeTarget "GHImageSizeDetector" */;
+			buildPhases = (
+				21CD2DE824AE1A56000FFA4C /* Sources */,
+				21CD2DE924AE1A56000FFA4C /* Frameworks */,
+				21CD2DEA24AE1A56000FFA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHImageSizeDetector;
+			productName = GHImageSizeDetector;
+			productReference = 21CD2DEC24AE1A56000FFA4C /* GHImageSizeDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21CD2DE424AE1A56000FFA4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Run Liao";
+				TargetAttributes = {
+					21CD2DEB24AE1A56000FFA4C = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 21CD2DE724AE1A56000FFA4C /* Build configuration list for PBXProject "GHImageSizeDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21CD2DE324AE1A56000FFA4C;
+			productRefGroup = 21CD2DED24AE1A56000FFA4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21CD2DEB24AE1A56000FFA4C /* GHImageSizeDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CD2DEA24AE1A56000FFA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CD2DFC24AE1A57000FFA4C /* LaunchScreen.storyboard in Resources */,
+				21CD2DF924AE1A57000FFA4C /* Assets.xcassets in Resources */,
+				21CD2DF724AE1A56000FFA4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21CD2DE824AE1A56000FFA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CD2DF424AE1A56000FFA4C /* ViewController.swift in Sources */,
+				21CD2DF024AE1A56000FFA4C /* AppDelegate.swift in Sources */,
+				21CD2DF224AE1A56000FFA4C /* SceneDelegate.swift in Sources */,
+				21CD2E0524AE1E5A000FFA4C /* GHImageSizeDetetor.swift in Sources */,
+				21CD2E0D24AE32E1000FFA4C /* UIImageView+Runtime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21CD2DF524AE1A56000FFA4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21CD2DF624AE1A56000FFA4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21CD2DFA24AE1A57000FFA4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21CD2DFB24AE1A57000FFA4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21CD2DFE24AE1A57000FFA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21CD2DFF24AE1A57000FFA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21CD2E0124AE1A57000FFA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG9MC8D2BK;
+				INFOPLIST_FILE = GHImageSizeDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liaoworking.GHImageSizeDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/Source/GHImageSizeDetector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21CD2E0224AE1A57000FFA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG9MC8D2BK;
+				INFOPLIST_FILE = GHImageSizeDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liaoworking.GHImageSizeDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/Source/GHImageSizeDetector-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21CD2DE724AE1A56000FFA4C /* Build configuration list for PBXProject "GHImageSizeDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CD2DFE24AE1A57000FFA4C /* Debug */,
+				21CD2DFF24AE1A57000FFA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CD2E0024AE1A57000FFA4C /* Build configuration list for PBXNativeTarget "GHImageSizeDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CD2E0124AE1A57000FFA4C /* Debug */,
+				21CD2E0224AE1A57000FFA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21CD2DE424AE1A56000FFA4C /* Project object */;
+}
