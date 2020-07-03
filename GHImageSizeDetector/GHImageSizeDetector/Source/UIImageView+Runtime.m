@@ -27,7 +27,9 @@
     NSLog(@"%lu\n",UIImageJPEGRepresentation(image, 1).length);
     
     UILabel * sizeLabel = [UILabel new];
-    sizeLabel.text = [NSString stringWithFormat:@"%lu\n",(unsigned long)[self calculateMemorySize:image]];
+//    sizeLabel.text = [NSString stringWithFormat:@"%lu\n",(unsigned long)[self calculateMemorySize:image]];
+  sizeLabel.text = [self stringWithbytes:[self calculateMemorySize:image]];
+
     sizeLabel.frame = CGRectMake(0, 0, 40, 10);
     sizeLabel.font = [UIFont systemFontOfSize:8];
     sizeLabel.backgroundColor = [UIColor blackColor];
@@ -35,7 +37,7 @@
     [self addSubview:sizeLabel];
 }
 
-- (NSUInteger)calculateMemorySize:(UIImage *)image {
+- (int)calculateMemorySize:(UIImage *)image {
     CGImageRef imageRef = image.CGImage;
     if (!imageRef) {
         return 0;
@@ -44,7 +46,18 @@
     NSUInteger frameCount;
     frameCount = image.images.count > 0 ? image.images.count : 1;
     NSUInteger cost = bytesPerFrame * frameCount;
-    return cost;
+  NSNumber * number = [NSNumber numberWithUnsignedLong:(unsigned long)cost];
+  return [number intValue];
+}
+
+- (NSString *)stringWithbytes:(int)bytes {
+  if (bytes < 1024) { // B
+      return [NSString stringWithFormat:@"%dB", bytes];
+  } else if (bytes >= 1024 && bytes < 1024 * 1024) { // KB
+      return [NSString stringWithFormat:@"%.0fKB", (double)bytes / 1024];
+  } else { // MB
+      return [NSString stringWithFormat:@"%.1fMB", (double)bytes / (1024 * 1024)];
+  }
 }
 
 
