@@ -12,6 +12,7 @@
 
 
 +(void)showMemoryCost {
+#ifdef DEBUG
     Method originalMethod = class_getInstanceMethod([self class], @selector(setImage:));
     Method swizzledMethod = class_getInstanceMethod([self class], @selector(swizzled_setImage:));
     
@@ -22,6 +23,7 @@
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
+#endif
 }
 
 

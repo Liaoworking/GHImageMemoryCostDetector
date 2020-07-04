@@ -71,7 +71,4 @@ Unit of Time : s
 
 * Easy to use and uninstall.
 
-* you can see **the number of the line** for your GGLog( ) and **function name** clearly in GHConslole.
-
-
 * At **release mode**, there will be no more any memory detection of your UIImageView.
