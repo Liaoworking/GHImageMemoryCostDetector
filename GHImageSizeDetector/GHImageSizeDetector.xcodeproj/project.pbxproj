@@ -60,6 +60,7 @@
 		21CD2DEE24AE1A56000FFA4C /* GHImageSizeDetector */ = {
 			isa = PBXGroup;
 			children = (
+				21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */,
 				21CD2E0324AE1BC6000FFA4C /* Source */,
 				21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */,
 				21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */,
@@ -77,7 +78,6 @@
 			children = (
 				21CD2E0B24AE32E1000FFA4C /* UIImageView+Runtime.h */,
 				21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */,
-				21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liaoworking.GHImageSizeDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/Source/GHImageSizeDetector-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/GHImageSizeDetector-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,7 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liaoworking.GHImageSizeDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/Source/GHImageSizeDetector-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GHImageSizeDetector/GHImageSizeDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

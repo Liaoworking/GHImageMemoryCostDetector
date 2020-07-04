@@ -12,17 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print(NSHomeDirectory())
-        
-        print("start\(Date().timeIntervalSince1970)")
-        for _ in 0...20000 {
-            let imageView = UIImageView()
-            imageView.frame = CGRect(x: 50, y: 50, width: 200, height: 200)
-            imageView.image = UIImage(named: "img")
-            view.addSubview(imageView)
-        }
-        print("start\(Date().timeIntervalSince1970)")
+        view.backgroundColor = .white
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 50, y: 50, width: 250, height: 310)
+        imageView.image = UIImage(named: "img")
+        view.addSubview(imageView)
 
 //        start1593833451.718289
 //        start1593833453.404059
