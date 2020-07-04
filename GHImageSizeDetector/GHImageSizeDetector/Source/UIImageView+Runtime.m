@@ -11,7 +11,7 @@
 @implementation UIImageView (Runtime)
 
 
-+(void)start {
++(void)showMemoryCost {
     Method method1 = class_getInstanceMethod([self class], @selector(setImage:));
     Method method2 = class_getInstanceMethod([self class], @selector(swizzled_setImage:));
     //交换method1和method2的IMP指针，(IMP代表了方法的具体的实现）
@@ -23,20 +23,23 @@
 {
     // call original implementation
     [self swizzled_setImage:image];
-    NSLog(@"%lu\n",(unsigned long)[self calculateMemorySize:image]);
-    NSLog(@"%lu\n",UIImageJPEGRepresentation(image, 1).length);
-    
-    UILabel * sizeLabel = [UILabel new];
-//    sizeLabel.text = [NSString stringWithFormat:@"%lu\n",(unsigned long)[self calculateMemorySize:image]];
-  sizeLabel.text = [self stringWithbytes:[self calculateMemorySize:image]];
+        CATextLayer *imageSizeLayer = [[CATextLayer alloc]init];
+        imageSizeLayer.fontSize = 8;
+        imageSizeLayer.contentsScale = [UIScreen mainScreen].scale;
+        imageSizeLayer.backgroundColor = UIColor.blackColor.CGColor;
+        if (self.frame.size.width != 0) {
+            imageSizeLayer.frame = CGRectMake((self.frame.size.width - 30) * 0.5, (self.frame.size.height - 10) * 0.5, 30, 10);
+        } else {
+            imageSizeLayer.frame = CGRectMake(0, 0, 30, 10);
+        }
+        imageSizeLayer.string = [self stringWithbytes:[self calculateMemorySize:image]];
+        [self.layer addSublayer:imageSizeLayer];
 
-    sizeLabel.frame = CGRectMake(0, 0, 40, 10);
-    sizeLabel.font = [UIFont systemFontOfSize:8];
-    sizeLabel.backgroundColor = [UIColor blackColor];
-    sizeLabel.textColor = [UIColor whiteColor];
-    [self addSubview:sizeLabel];
+
 }
 
+/// Calculate the Memory Size Cost
+/// @param image image
 - (int)calculateMemorySize:(UIImage *)image {
     CGImageRef imageRef = image.CGImage;
     if (!imageRef) {
@@ -49,6 +52,8 @@
     return (int)cost;
 }
 
+/// friendly Memory display
+/// @param bytes bytes
 - (NSString *)stringWithbytes:(int)bytes {
   if (bytes < 1024) { // B
       return [NSString stringWithFormat:@"%dB", bytes];
