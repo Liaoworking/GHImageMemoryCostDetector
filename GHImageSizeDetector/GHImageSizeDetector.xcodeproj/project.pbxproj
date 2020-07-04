@@ -13,7 +13,7 @@
 		21CD2DF724AE1A56000FFA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF524AE1A56000FFA4C /* Main.storyboard */; };
 		21CD2DF924AE1A57000FFA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF824AE1A57000FFA4C /* Assets.xcassets */; };
 		21CD2DFC24AE1A57000FFA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DFA24AE1A57000FFA4C /* LaunchScreen.storyboard */; };
-		21CD2E0D24AE32E1000FFA4C /* UIImageView+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */; };
+		21CD2E0D24AE32E1000FFA4C /* UIImageView+MemDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		21CD2DFB24AE1A57000FFA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21CD2DFD24AE1A57000FFA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHImageSizeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
-		21CD2E0B24AE32E1000FFA4C /* UIImageView+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Runtime.h"; sourceTree = "<group>"; };
-		21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Runtime.m"; sourceTree = "<group>"; };
+		21CD2E0B24AE32E1000FFA4C /* UIImageView+MemDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MemDetector.h"; sourceTree = "<group>"; };
+		21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MemDetector.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 		21CD2E0324AE1BC6000FFA4C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				21CD2E0B24AE32E1000FFA4C /* UIImageView+Runtime.h */,
-				21CD2E0C24AE32E1000FFA4C /* UIImageView+Runtime.m */,
+				21CD2E0B24AE32E1000FFA4C /* UIImageView+MemDetector.h */,
+				21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 				21CD2DF424AE1A56000FFA4C /* ViewController.swift in Sources */,
 				21CD2DF024AE1A56000FFA4C /* AppDelegate.swift in Sources */,
 				21CD2DF224AE1A56000FFA4C /* SceneDelegate.swift in Sources */,
-				21CD2E0D24AE32E1000FFA4C /* UIImageView+Runtime.m in Sources */,
+				21CD2E0D24AE32E1000FFA4C /* UIImageView+MemDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

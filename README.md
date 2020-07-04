@@ -1,5 +1,6 @@
-# GHImageSizeDetector
-an easy way to show the memory size and disk cost in your UIImageView
+# GHImageMemoryCostDetector
+
+an easy way to show the memory cost in your UIImageView, as a reference, to optimise app's memory usage.
 
 ![Swift Version](https://img.shields.io/badge/xCode-9.1+-blue.svg)
 ![Swift Version](https://img.shields.io/badge/iOS-7.0+-blue.svg) 
@@ -8,22 +9,23 @@ an easy way to show the memory size and disk cost in your UIImageView
 
 
 ## Installation
-Simply add GHConsole folder with files to your project.
+Simply add Source folder with files to your project.
 
 ## Usage example
+![image](https://upload-images.jianshu.io/upload_images/1724449-e15caa4027e5532b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Simply start GHConsole in your App. GHConsole view will be added above the key window as a view.
+![image](https://upload-images.jianshu.io/upload_images/1724449-d82fda0110109abb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-You can find example projects [here](https://github.com/liaoworking/GHConsole)
+You can find example projects [here](https://github.com/Liaoworking/GHImageMemoryCostDetector)
 
-#### Start Log on GHConsole
+#### Start
 
-You just only initialize GHConsole in your appDelegate.m When your App are launching.
+You just only initialize in your appDelegate.m When your App are launching.
 **Objective-C usage**
 
 ```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   [[GHConsole sharedConsole]startPrintLog];
+    [UIImageView showMemoryCost];
     return YES;
 }
 ```
@@ -32,125 +34,44 @@ You just only initialize GHConsole in your appDelegate.m When your App are launc
 
 ```Swift
  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        GHConsole.sharedConsole.startPrintLog()
+        UIImageView.showMemoryCost()
         return true
     }
 ```
 
-And then, you can use GGLog( ) like NSLog( )
+And then, you can all the imageView memory usage in every imageView.
 
-**Objective-C usage**
-
-```Objective-C
-GGLog(@"This is some log I just want to show in GHConsole")；
-
-
-
-  NSDictionary *parameterDict = @{@"paraKey1":@"paraValue1",
-                                    @"paraKey2":@"paraValue2",
-                                    @"paraKey3":@"paraValue2"
-                                    }
-GGLog(@"%@",parametersDict);
-
-//if you  want to see the responsJSon from the API, you can just use GGLog( ) like NSLog( ) here.
-GGLog(@"%@",responsJSON);
-```
-
-**Swift usage**
-
-```Swift
-GGLog("This is a log I just want to show in GHConsole")
-        
-let parameterDict = ["paraKey1":"paraValue1","paraKey2":"paraValue2","paraKey3":"paraValue3"] as [String:Any]
-GGLog("\(parameterDict)")
-        
-//if you  want to see the responsJSon from the API, you can just use GGLog( ) like NSLog( ) here.
-GGLog("if you  want to see the responsJSon from the API, you can just use GGLog( ) like NSLog( ) here!")
-```
-
-
-When you double tap  The GHConsole in your app and then the appearance of it just like this.
-![Alt text](http://img.njbanban.com/GHOwnedSnip20181202_9.png)
-
-#### Stop Logging
-
-Call when you're done with GHConsole.
-
-**Objective-C usage**
-
-```Objective-C
-[GHConsole shareConsole]stop];
-```
-**Swift usage**
-
-```Swift
-GHConsole.sharedConsole.stopPrinting()
-```
-if you don't want to see the GHConsole,you just need to annotate it.
-
-```Objective-C
-//[[GHConsole sharedConsole]startPrintLog];
-```
+## Support
+UIImageView and it's subclass, like: SDAnimatedImageView.
 
 ## Performance
 
+GHImageMemoryCostDetector just add a lightweight text layer in your original imageView.
 
-GHConsole is based on `printf` in C. Better performance to NSLog.
+The time consuming of UIImageView image set event for 20000 times:
 
+![image](https://upload-images.jianshu.io/upload_images/1724449-4b3e579516d2cc10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+Testing Environment: iPhone X
 
-The time consuming of printing a string for 10000 times
+System Version: iOS 13.4.1
 
-
-![Alt text](http://img.njbanban.com/GHOwn/WX20180316-133618.png)
-
-
-Testing Environment: iPhone 6
-
-System Version: iOS 11.2.5
-
-Unit of Time : ms
+Unit of Time : s
 
 
 
 
 ## Features
-* GHConsole is at an inconspicuous position in your app.Multiple gesture was added in GHConsole. double tap to make it Full Screen and back.
 
 * This framework only contains two files 
 
-    **GHConsole.h**
+    **UIImageView+MemDetector.h**
 
-    **GHConsole.m**
+    **UIImageView+MemDetector.m**
 
 * Easy to use and uninstall.
 
 * you can see **the number of the line** for your GGLog( ) and **function name** clearly in GHConslole.
 
-* A **clear button** on GHConsole can remove some useless log.
-* A **save button** and **load button** can save the log, and read the log you have saved. It's easy to check the problem in your apps.
-* At **release mode**, there will be no more any log output in your console.
-* absolutely **thread safe**.
 
-## Configuration
-
-Sorry. The GHConsole is too easy to have any configuration. If you have any good idea or demand you can tell me at my github or email.
-
-
-
-## Requirements
-- iOS 7.0+
-
-
-## Contributors List:
-zhoushaowen - [https://github.com/zhoushaowen](https://github.com/zhoushaowen)
-
-Kane - [https://github.com/KaneLanF](https://github.com/KaneLanF)
-## Meta
-
-Liao Guanghui - [Blog](https://liaoworking.com) - [FB](https://www.facebook.com/guanghui.liao.3)
-
-
-GHConsole is available under the MIT license. See the LICENSE file for more info.
-
-
+* At **release mode**, there will be no more any memory detection of your UIImageView.

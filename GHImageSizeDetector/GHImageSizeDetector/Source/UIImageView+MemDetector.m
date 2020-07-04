@@ -6,7 +6,7 @@
 //  Copyright © 2020 Run Liao. All rights reserved.
 //
 
-#import "UIImageView+Runtime.h"
+#import "UIImageView+MemDetector.h"
 #import <objc/runtime.h>
 @implementation UIImageView (Runtime)
 
