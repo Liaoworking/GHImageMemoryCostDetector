@@ -46,8 +46,7 @@
     NSUInteger frameCount;
     frameCount = image.images.count > 0 ? image.images.count : 1;
     NSUInteger cost = bytesPerFrame * frameCount;
-  NSNumber * number = [NSNumber numberWithUnsignedLong:(unsigned long)cost];
-  return [number intValue];
+    return (int)cost;
 }
 
 - (NSString *)stringWithbytes:(int)bytes {
