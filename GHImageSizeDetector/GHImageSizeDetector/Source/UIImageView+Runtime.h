@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (Runtime)
+
+/// show the memory cost in your imageView.
 +(void)showMemoryCost;
 
 @end
