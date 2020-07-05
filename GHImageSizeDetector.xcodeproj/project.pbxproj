@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2164126724B1C6F4006DE434 /* UIImageView+MemDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164126524B1C6F4006DE434 /* UIImageView+MemDetector.m */; };
 		21CD2DF024AE1A56000FFA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */; };
 		21CD2DF224AE1A56000FFA4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */; };
 		21CD2DF424AE1A56000FFA4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2DF324AE1A56000FFA4C /* ViewController.swift */; };
 		21CD2DF724AE1A56000FFA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF524AE1A56000FFA4C /* Main.storyboard */; };
 		21CD2DF924AE1A57000FFA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DF824AE1A57000FFA4C /* Assets.xcassets */; };
 		21CD2DFC24AE1A57000FFA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD2DFA24AE1A57000FFA4C /* LaunchScreen.storyboard */; };
-		21CD2E0D24AE32E1000FFA4C /* UIImageView+MemDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2164126524B1C6F4006DE434 /* UIImageView+MemDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MemDetector.m"; sourceTree = "<group>"; };
+		2164126624B1C6F4006DE434 /* UIImageView+MemDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MemDetector.h"; sourceTree = "<group>"; };
 		21CD2DEC24AE1A56000FFA4C /* GHImageSizeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHImageSizeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		21CD2DFB24AE1A57000FFA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21CD2DFD24AE1A57000FFA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHImageSizeDetector-Bridging-Header.h"; sourceTree = "<group>"; };
-		21CD2E0B24AE32E1000FFA4C /* UIImageView+MemDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MemDetector.h"; sourceTree = "<group>"; };
-		21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MemDetector.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2164126424B1C6F4006DE434 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2164126524B1C6F4006DE434 /* UIImageView+MemDetector.m */,
+				2164126624B1C6F4006DE434 /* UIImageView+MemDetector.h */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		21CD2DE324AE1A56000FFA4C = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +69,8 @@
 		21CD2DEE24AE1A56000FFA4C /* GHImageSizeDetector */ = {
 			isa = PBXGroup;
 			children = (
+				2164126424B1C6F4006DE434 /* Source */,
 				21CD2E0624AE3220000FFA4C /* GHImageSizeDetector-Bridging-Header.h */,
-				21CD2E0324AE1BC6000FFA4C /* Source */,
 				21CD2DEF24AE1A56000FFA4C /* AppDelegate.swift */,
 				21CD2DF124AE1A56000FFA4C /* SceneDelegate.swift */,
 				21CD2DF324AE1A56000FFA4C /* ViewController.swift */,
@@ -71,15 +80,6 @@
 				21CD2DFD24AE1A57000FFA4C /* Info.plist */,
 			);
 			path = GHImageSizeDetector;
-			sourceTree = "<group>";
-		};
-		21CD2E0324AE1BC6000FFA4C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				21CD2E0B24AE32E1000FFA4C /* UIImageView+MemDetector.h */,
-				21CD2E0C24AE32E1000FFA4C /* UIImageView+MemDetector.m */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2164126724B1C6F4006DE434 /* UIImageView+MemDetector.m in Sources */,
 				21CD2DF424AE1A56000FFA4C /* ViewController.swift in Sources */,
 				21CD2DF024AE1A56000FFA4C /* AppDelegate.swift in Sources */,
 				21CD2DF224AE1A56000FFA4C /* SceneDelegate.swift in Sources */,
-				21CD2E0D24AE32E1000FFA4C /* UIImageView+MemDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
