@@ -12,9 +12,9 @@ an easy way to show the memory cost in your UIImageView, as a reference, to opti
 Simply add Source folder with files to your project.
 
 ## Usage example
-![image](https://upload-images.jianshu.io/upload_images/1724449-e15caa4027e5532b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://upload-images.jianshu.io/upload_images/1724449-e15caa4027e5532b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
-![image](https://upload-images.jianshu.io/upload_images/1724449-d82fda0110109abb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://upload-images.jianshu.io/upload_images/1724449-d82fda0110109abb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 You can find example projects [here](https://github.com/Liaoworking/GHImageMemoryCostDetector)
 
