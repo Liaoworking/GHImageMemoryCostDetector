@@ -5,8 +5,6 @@ an easy way to show the memory cost in your UIImageView, as a reference, to opti
 ![Swift Version](https://img.shields.io/badge/xCode-9.1+-blue.svg)
 ![Swift Version](https://img.shields.io/badge/iOS-7.0+-blue.svg) 
 ![Plaform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
-![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
-
 
 ## Installation
 Simply add Source folder with files to your project.
