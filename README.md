@@ -71,4 +71,4 @@ Unit of Time : s
 
 * Easy to use and uninstall.
 
-* At **release mode**, there will be no more any memory detection of your UIImageView.
+* At **release mode**, there will be no more any memory detection in your UIImageView.
