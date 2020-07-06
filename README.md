@@ -46,7 +46,7 @@ UIImageView and it's subclass, like: SDAnimatedImageView.
 
 GHImageMemoryCostDetector just add a lightweight text layer in your original imageView.
 
-The time consuming of UIImageView image set event for 20000 times:
+The total time consuming of UIImageView image set event for 20000 times:
 
 ![image](https://upload-images.jianshu.io/upload_images/1724449-4b3e579516d2cc10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
